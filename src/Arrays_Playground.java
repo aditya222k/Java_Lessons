@@ -54,8 +54,7 @@ public class Arrays_Playground {
         }
 
     }
-    static void findingAnElement()
-    {
+    static void findingAnElement(){
         Scanner sc =new Scanner(System.in);
         System.out.println("enter number to be searched");
         int num= sc.nextInt();
@@ -76,9 +75,25 @@ public class Arrays_Playground {
                 System.out.println("number not found!");
             }
         }
+    static void sumOfElementOfArray(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter numbers");
+        int sum=0;
+        int arr []= new int[5];
+        for(int i=0;i<5;i++){
+            arr[i] = sc.nextInt();
+        }
+        for(int i:arr){
+            sum=sum+i;
+        }
+        System.out.println("sum = " + sum);
+    }
+
+
     public static void main(String[] args) {
 //        singleDimensionalArray();
 //        multiDimensionalArray();
-        findingAnElement();
+//        findingAnElement();
+        sumOfElementOfArray();
     }
 }
