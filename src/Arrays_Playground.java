@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Arrays_Playground {
     static void singleDimensionalArray(){ //method for single dimensional array
         //static approach to creating an array
@@ -53,8 +54,31 @@ public class Arrays_Playground {
         }
 
     }
+    static void findingAnElement()
+    {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter number to be searched");
+        int num= sc.nextInt();
+        System.out.println("Enter numbers");
+        int arr []= new int[5];
+        for(int i=0;i<5;i++){
+            arr[i] = sc.nextInt();
+        }
+        boolean flag =false;
+            for(int i:arr){
+                if (i==num){
+                    System.out.println("number found!");
+                    flag=true;
+                    break;
+                }
+            }
+            if(!flag){
+                System.out.println("number not found!");
+            }
+        }
     public static void main(String[] args) {
-        singleDimensionalArray();
-        multiDimensionalArray();
+//        singleDimensionalArray();
+//        multiDimensionalArray();
+        findingAnElement();
     }
 }
