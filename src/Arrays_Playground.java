@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 public class Arrays_Playground {
     static void singleDimensionalArray(){ //method for single dimensional array
