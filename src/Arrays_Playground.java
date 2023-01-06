@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Arrays_Playground {
     static void singleDimensionalArray(){ //method for single dimensional array
@@ -54,15 +55,22 @@ public class Arrays_Playground {
         }
 
     }
-    static void findingAnElement(){
+    static int[] inputAnArray(){
         Scanner sc =new Scanner(System.in);
-        System.out.println("enter number to be searched");
-        int num= sc.nextInt();
         System.out.println("Enter numbers");
+        int sum=0;
         int arr []= new int[5];
         for(int i=0;i<5;i++){
             arr[i] = sc.nextInt();
         }
+        return arr;
+    }
+    static void findingAnElement(){
+        int arr[]= inputAnArray();
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter number to be searched");
+        int num= sc.nextInt();
+
         boolean flag =false;
             for(int i:arr){
                 if (i==num){
@@ -76,24 +84,26 @@ public class Arrays_Playground {
             }
         }
     static void sumOfElementOfArray(){
-        Scanner sc =new Scanner(System.in);
-        System.out.println("Enter numbers");
+        int arr[]= inputAnArray();
         int sum=0;
-        int arr []= new int[5];
-        for(int i=0;i<5;i++){
-            arr[i] = sc.nextInt();
-        }
         for(int i:arr){
             sum=sum+i;
         }
         System.out.println("sum = " + sum);
     }
-
-
+    static void evenNumbersInArray(){
+        int arr[]= inputAnArray();
+        for(int i:arr){
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }
+    }
     public static void main(String[] args) {
 //        singleDimensionalArray();
 //        multiDimensionalArray();
 //        findingAnElement();
-        sumOfElementOfArray();
+//        sumOfElementOfArray();
+        evenNumbersInArray();
     }
 }
