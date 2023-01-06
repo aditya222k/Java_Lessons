@@ -86,7 +86,7 @@ public class Arrays_Playground {
         for(int i:arr){
             sum=sum+i;
         }
-        System.out.println("sum = " + sum);
+        System.out.println("sum = " + sum);//run
     }
 
 
