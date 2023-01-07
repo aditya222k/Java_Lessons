@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class String_Playground {
 //    public static void inputString(){
-//    }
     public static void reverseAString(){
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
