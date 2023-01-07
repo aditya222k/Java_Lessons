@@ -2,7 +2,7 @@ package classObjectPlayground;
 
 public class StudentMain {
     public static void main(String[] args) {
-//        Student stu1 =new Student();//stu1 is obejct reference variable
+//        Student stu1 =new Student();//stu1 is object reference variable
         //Approach 1 - assigning the values using object reference variable
         /*
         stu1.sid=100;
