@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Arrays_Playground {
+public class ArraysPlayground {
     static void singleDimensionalArray(){ //method for single dimensional array
         //static approach to creating an array
         int a[] = new int[5];
