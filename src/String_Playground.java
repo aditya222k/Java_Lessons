@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 public class String_Playground {
+//    public static void inputString(){
+//    }
     public static void reverseAString(){
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -29,15 +31,28 @@ public class String_Playground {
             System.out.println("String not found in array");
         }
     }
+    public static void compareString(){ // method to compare two strings ignoring the case
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
+        if(s1.equalsIgnoreCase(s2)){
+            System.out.println("Strings are same");
+        }else{
+            System.out.println("Strings are not same");
+        }
+    }
+    public static void subString(){ // method to get a substring between two given index
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        int i = sc.nextInt();//starting index
+        int j = sc.nextInt();//ending index
+        System.out.println(s1.substring(i, j));
+    }
     public static void main(String[] args){
-//        reverseAString();
+        reverseAString();
         stringPresentInArray();
+        compareString();
+        subString();
     }
 }
 
-//TODO:1) Write a java program to compare two strings, ignoring case differences.
-//TODO:2) Write a Java program to concatenate a given string to the end of another string.
-//TODO:3) Write a java program to get the length of a given string
-//TODO:4) Write a Java program to get a substring of a given string between two specified positions
-//TODO:5) Write a Java program to convert all the characters in a string to uppercase.
-//TODO:6) Write a Java program to convert all the characters in a string to lowercase
