@@ -1,9 +1,11 @@
 
 class Bank{
+    String color="grey";
     double roi(){
         return 0;
     }
 }
+
 
 class SBI extends Bank{
     @Override
@@ -18,6 +20,15 @@ class ICICI extends Bank{
     }
 }
 
+class RBI extends Bank{
+    String wallColor = super.color;
+    @Override
+    double roi() {
+        return super.roi();
+    }
+}
+
+
 public class MethodOverridingPlayground {
     public static void main(String[] args){
         SBI sbi=new SBI();
@@ -26,5 +37,8 @@ public class MethodOverridingPlayground {
         ICICI icici=new ICICI();
         System.out.println(icici.roi());
 
+        RBI rbi =new RBI();
+        System.out.println("rbi.color = " + rbi.color);
+        System.out.println("rbi.roi() = " + rbi.roi());
     }
 }
