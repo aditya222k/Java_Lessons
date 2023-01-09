@@ -18,25 +18,50 @@ class C extends B{ //C is a child class of B
     }
 }
 
+class D extends A{
+    int d;
+    void multiRun(){
+        System.out.println(d);
+    }
+}
+
+class E extends A{
+    int e;
+    void multiPrint(){
+        System.out.println(e);
+    }
+}
+
 public class InheritancePlayground {
     public static void main(String[] args){
         A aobj = new A();
         aobj.a =100;
         aobj.display();
 
-        B obj = new B();
+        B obj = new B(); // single level inheritance
         obj.b=120;
         obj.a=500;
         obj.print();
         obj.display();
 
-        C cobj = new C();
+        C cobj = new C(); // Multilevel inheritance
         cobj.a=1000;
         cobj.b=2000;
         cobj.c=3000;
         cobj.run();
         cobj.display();
         cobj.print();
+
+        D dobj= new D();
+        dobj.a= 400;
+        dobj.d =500;
+        dobj.display();
+        dobj.multiRun();
+        E eobj= new E();
+        eobj.a= 800;
+        eobj.e =900;
+        eobj.display();
+        eobj.multiPrint();
 
 
     }
