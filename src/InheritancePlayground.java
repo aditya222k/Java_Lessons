@@ -19,15 +19,13 @@ class C extends B{ //C is a child class of B
 }
 
 class D extends A{
-    int d;
-    void multiRun(){
+    void multiRun(int d){
         System.out.println(d);
     }
 }
 
 class E extends A{
-    int e;
-    void multiPrint(){
+    void multiPrint(int e){
         System.out.println(e);
     }
 }
@@ -54,14 +52,12 @@ public class InheritancePlayground {
 
         D dobj= new D();
         dobj.a= 400;
-        dobj.d =500;
         dobj.display();
-        dobj.multiRun();
+        dobj.multiRun(500);
         E eobj= new E();
         eobj.a= 800;
-        eobj.e =900;
         eobj.display();
-        eobj.multiPrint();
+        eobj.multiPrint(900);
 
 
     }
