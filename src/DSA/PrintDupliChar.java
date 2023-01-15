@@ -1,5 +1,5 @@
 package DSA;
-// TODO:Complete using Hash Maps as well
+// TODO:Complete using Hash Maps as well try using array for strings
 import java.util.Scanner;
 
 public class PrintDupliChar {
@@ -16,10 +16,10 @@ public class PrintDupliChar {
             for(int j=i+1; j<str.length(); j++){
                 if(str.charAt(i)==str.charAt(j)){
                     System.out.println(str.charAt(j));
+                    break;
                 }
             }
         }
-        System.out.println(new char[0]);
         return new char[0];
     }
 
