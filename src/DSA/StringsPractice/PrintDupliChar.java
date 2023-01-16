@@ -1,4 +1,4 @@
-package DSA;
+package DSA.StringsPractice;
 // TODO:Complete using Hash Maps as well try using array for strings
 import java.util.Scanner;
 

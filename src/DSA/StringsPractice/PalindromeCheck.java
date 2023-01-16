@@ -1,7 +1,7 @@
-package DSA;
+package DSA.StringsPractice;
 
-import static DSA.PrintDupliChar.input;
-import static DSA.ReverseAString.withoutRecursion;
+import static DSA.StringsPractice.PrintDupliChar.input;
+import static DSA.StringsPractice.ReverseAString.withoutRecursion;
 
 public class PalindromeCheck {
 

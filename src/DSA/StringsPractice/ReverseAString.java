@@ -1,6 +1,6 @@
-package DSA;
+package DSA.StringsPractice;
 
-import static DSA.PrintDupliChar.input;
+import static DSA.StringsPractice.PrintDupliChar.input;
 
 public class ReverseAString {
 

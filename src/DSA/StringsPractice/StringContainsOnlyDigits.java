@@ -1,5 +1,5 @@
-package DSA;
-import static DSA.PrintDupliChar.*;
+package DSA.StringsPractice;
+import static DSA.StringsPractice.PrintDupliChar.*;
 import java.util.regex.*;
 public class StringContainsOnlyDigits {
     static boolean withoutFunction(String str){
