@@ -31,7 +31,6 @@ public class DuplicateIntegersInArray {
             for(int j=i+1; j<arr.length;j++){
                 if(arr[i]==arr[j]){
                     System.out.println(arr[i]);
-                    arr[i]='0';
                     break;
                 }
             }
