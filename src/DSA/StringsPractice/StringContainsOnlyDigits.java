@@ -27,7 +27,7 @@ public class StringContainsOnlyDigits {
         return m.matches();
     }
     public static void main(String[] args){
-        String str= input();
+        String str= stringInput();
         System.out.println(usingRegex(str));
     }
 }

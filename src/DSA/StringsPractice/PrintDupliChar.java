@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PrintDupliChar {
 
-    static String input(){
+    static String stringInput(){
         Scanner in = new Scanner(System.in);
         System.out.println("Input Text");
         String stri= in.nextLine();
@@ -23,7 +23,7 @@ public class PrintDupliChar {
     }
 
     public static void main(String[] args){
-        String str=input();
+        String str= stringInput();
         runner(str);
     }
 }

@@ -1,6 +1,6 @@
 package DSA.StringsPractice;
 
-import static DSA.StringsPractice.PrintDupliChar.input;
+import static DSA.StringsPractice.PrintDupliChar.stringInput;
 
 public class FirstNonRepeatingCharacters {
 
@@ -24,7 +24,7 @@ public class FirstNonRepeatingCharacters {
         return fnr;
     }
     public static void main(String[] args){
-        String str= input();
+        String str= stringInput();
         System.out.println(runner(str));
 
     }

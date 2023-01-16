@@ -2,7 +2,7 @@ package DSA.StringsPractice;
 import java.util.Scanner;
 
 
-import static DSA.StringsPractice.PrintDupliChar.input;
+import static DSA.StringsPractice.PrintDupliChar.stringInput;
 
 public class CountOccurrence {
     static int countOccurrence(String str,char ch){
@@ -16,7 +16,7 @@ public class CountOccurrence {
     }
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        String str= input();
+        String str= stringInput();
         char ch =in.next().charAt(0) ;
         System.out.println(countOccurrence(str, ch));
 

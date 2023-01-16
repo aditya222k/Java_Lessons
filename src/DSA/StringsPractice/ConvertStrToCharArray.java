@@ -1,10 +1,10 @@
 package DSA.StringsPractice;
 
-import static DSA.StringsPractice.PrintDupliChar.input;
+import static DSA.StringsPractice.PrintDupliChar.stringInput;
 
 public class ConvertStrToCharArray {
     public static void main(String[] args){
-        String str =input();
+        String str = stringInput();
         char[] ch =new char[str.length()];
         char[] ch1=new char[str.length()];
         for(int i =0 ; i < str.length();i++){

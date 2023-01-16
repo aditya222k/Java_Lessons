@@ -1,7 +1,7 @@
 package DSA.StringsPractice;
 import java.util.ArrayList;
 
-import static DSA.StringsPractice.PrintDupliChar.input;
+import static DSA.StringsPractice.PrintDupliChar.stringInput;
 public class CountConsonantsVowels {
 
     static ArrayList<Character> arrayListGenerator(String str){
@@ -27,7 +27,7 @@ public class CountConsonantsVowels {
         System.out.println("ccount = " + ccount);
     }
     public static void main(String[] args){
-        String str= input();
+        String str= stringInput();
         counter(arrayListGenerator("aeiou"),str);
     }
 }
