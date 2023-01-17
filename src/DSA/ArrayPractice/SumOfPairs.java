@@ -1,6 +1,8 @@
 package DSA.ArrayPractice;
 //TODO: complete using Hashmaps like in SumInArray.java
+import static DSA.ArrayPractice.SumInArray.mapArray;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,13 +10,19 @@ import static DSA.ArrayPractice.DuplicateIntegersInArray.arrayInput;
 import static DSA.ArrayPractice.DuplicateIntegersInArray.in;
 
 public class SumOfPairs {
-
     static void sumPair(int[] arr, int tar){
-        for(int i=0 ; i<arr.length;i++){
-            for(int j =i+1; j<arr.length;j++){
-                if(arr[i]+arr[j]==tar){
-                    System.out.println(arr[i]+","+arr[j]);
+        for(int i:arr){
+            for(int j:arr){
+                if((i+j)==tar){
+                    System.out.println(i+","+j);
                 }
+            }
+        }
+    }
+    static void hashedSumOfPair(HashMap abc, int tar, int[] arr){
+        for(int i=0; i<arr.length;i++){
+            if(abc.containsKey(tar-arr[i])){
+                System.out.println(arr[i]+","+(tar-arr[i]));
             }
         }
     }
@@ -24,5 +32,7 @@ public class SumOfPairs {
         System.out.println("enter target");
         int target= in.nextInt();
         sumPair(arr,target);
+        System.out.println("-------------------------------");
+        hashedSumOfPair(mapArray(arr),target,arr);
     }
 }
