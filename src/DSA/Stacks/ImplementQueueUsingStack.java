@@ -4,7 +4,7 @@ import static DSA.Stacks.ReverseUsingStack.*;
 
 public class ImplementQueueUsingStack {
     static ArrayList<Integer> ar1=new ArrayList<>();
-    static ArrayList<Integer> pushingIntoTemp(int[] arr, int n) {
+    static ArrayList<Integer> pushToQueue(int[] arr, int n) {
         addArraytoList(arr);
         int i=0;
         while( i<n) {
@@ -18,7 +18,7 @@ public class ImplementQueueUsingStack {
 
     public static void main(String[] args){
         int[] arr = {2,4,6,8,10};
-        pushingIntoTemp( arr, arr.length);
+        pushToQueue( arr, arr.length);
         System.out.println(pop());
         System.out.println(pop());
     }
