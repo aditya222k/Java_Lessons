@@ -16,12 +16,16 @@ public class ReverseUsingStack {
         ar.remove(ar.size()-1);
         return num;
     }
-
-    static String reverse(int[] arr){
-        int[] arr1 = new int[arr.length];
+    static ArrayList<Integer> addArraytoList(int[] arr){
         for(int i=0 ;i<arr.length;i++){
             push(arr[i]);
         }
+        return ar;
+    }
+
+    static String reverse(int[] arr){
+        addArraytoList(arr);
+        int[] arr1 = new int[arr.length];
         for(int i=0 ;i<arr.length;i++){
             arr1[i]=pop();
         }
