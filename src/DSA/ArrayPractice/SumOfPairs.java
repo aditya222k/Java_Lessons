@@ -1,9 +1,14 @@
 package DSA.ArrayPractice;
+//TODO: complete using Hashmaps like in SumInArray.java
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static DSA.ArrayPractice.DuplicateIntegersInArray.arrayInput;
 import static DSA.ArrayPractice.DuplicateIntegersInArray.in;
 
 public class SumOfPairs {
+
     static void sumPair(int[] arr, int tar){
         for(int i=0 ; i<arr.length;i++){
             for(int j =i+1; j<arr.length;j++){
