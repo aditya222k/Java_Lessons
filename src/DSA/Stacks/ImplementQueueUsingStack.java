@@ -7,7 +7,8 @@ public class ImplementQueueUsingStack {
 
     static ArrayList<Integer> ar1=new ArrayList<>();
 
-    static ArrayList<Integer> pushingIntoTemp(ArrayList<Integer> ar, int n) {
+    static ArrayList<Integer> pushingIntoTemp(int[] arr, int n) {
+        addArraytoList(arr);
         int i=0;
         while( i<n) {
             ar1.add(ReverseUsingStack.pop());
@@ -19,6 +20,7 @@ public class ImplementQueueUsingStack {
     }
 
     static int deque(){
+
         int i=ar.size();
         int j=0;
 //        while (j<i){
@@ -28,9 +30,13 @@ public class ImplementQueueUsingStack {
         return pop();
     }
 
+    static void runner(){
+
+    }
+
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5,6};
-        pushingIntoTemp(addArraytoList(arr), arr.length);
+        pushingIntoTemp( arr, arr.length);
         System.out.println(deque());
         System.out.println(deque());
     }
