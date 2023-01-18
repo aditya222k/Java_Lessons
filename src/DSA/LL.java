@@ -46,15 +46,49 @@ public class LL {
         }
         Node currNode=head;
         while (currNode != null) {
-            System.out.println((currNode.data));
+            System.out.print((currNode.data+" ----> "));
             currNode=currNode.next;
         }
+        System.out.println("null");
+    }
+    void deleteFirst(){
+        if(head==null){
+            System.out.println("no list available");
+            return;
+        }
+        head=head.next;
+    }
+
+    void deleteLast() {
+        if (head == null) {
+            System.out.println("no list available");
+            return;
+        }
+        if(head.next==null){
+            head=null;
+            return;
+        }
+        Node secLastNode=head; // i
+        Node lastNode=head.next;//i+1
+        while(lastNode.next!=null){
+            lastNode=lastNode.next;
+            secLastNode=secLastNode.next;
+        }
+        System.out.println(lastNode);
+        secLastNode.next=null;
     }
 
     public static void main(String[] args) {
         LL list=new LL();
         list.addStart("a");
         list.addStart("is");
+        list.printList();
+        list.addLast("list");
+        list.printList();
+        list.addStart("this");
+        list.printList();
+        list.deleteLast();
+        list.deleteLast();
         list.printList();
     }
 }
