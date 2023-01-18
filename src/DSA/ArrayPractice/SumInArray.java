@@ -32,7 +32,7 @@ public class SumInArray {
         return maps;
     }
 
-    static void checkSum(int[] arr, HashMap<Integer, Integer> maps){//TODO: to check two numbers we need two for loops
+    static void checkSum(int[] arr, HashMap<Integer, Integer> maps){
         int sum;
         for(int i =0; i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){

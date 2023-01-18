@@ -1,5 +1,4 @@
 package DSA.ArrayPractice;
-//TODO: complete using Hashmaps like in SumInArray.java
 import static DSA.ArrayPractice.SumInArray.mapArray;
 
 import java.util.ArrayList;
