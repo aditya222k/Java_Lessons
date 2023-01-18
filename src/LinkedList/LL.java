@@ -1,5 +1,5 @@
 
-package DSA;
+package LinkedList;
 //https://www.youtube.com/watch?v=oAja8-Ulz6o
 //Head is the first node
 public class LL {
