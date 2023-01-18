@@ -1,4 +1,8 @@
 package DSA.SearchingTechnique;
+/*
+Divide the array based on whether the mid is less or more than the number and then keep doing it with the sub array that
+is received till middle is not equal to the target.
+ */
 
 public class BinarySearch {
     static void binarySearch(int[] arr, int tar) {
