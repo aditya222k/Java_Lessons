@@ -2,11 +2,10 @@
 package DSA.LinkedList;
 //https://www.youtube.com/watch?v=oAja8-Ulz6o
 //Head is the first node
-public class LL {
+ class LL {
     Node head;
 
     static class Node {
-
         String data;
         Node next;
         Node(String data) {
