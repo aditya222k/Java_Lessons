@@ -1,6 +1,6 @@
 package DSA.SortingTechniques;
 
-/* in selection sort the outer for creates range for insorted array in the array. The inner array find the smallest number in
+/* in selection sort the outer for creates range for unsorted array in the array. The inner array find the smallest number in
 range set by outer for loop. Once the smalled element in the range is found it is replaced by the first element in of the outer for loop range
 like this the range keep shifting to left hence reducing the amount of integers it has to go through and reducing the range*/
 
