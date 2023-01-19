@@ -19,7 +19,22 @@ public class FindNthElement {
         }
         return currN.data;
     }
+     static int findNthElementFromStart(ReverseALinkedList.Node head, int n) {
+        if(head==null){
+            return 0;
+        }
+        if(n==1){
+            return head.data;
+        }
+         ReverseALinkedList.Node curr= head;
+        int i=1;
+        while(i<n){
+            curr=curr.next;
+            i++;
+        }
 
+        return curr.data;
+     }
     public static void main(String[] args) {
         ReverseALinkedList list=new ReverseALinkedList();
         list.addLast(1);
@@ -27,7 +42,7 @@ public class FindNthElement {
         list.addLast(3);
         list.addLast(4);
         list.printList();
-        System.out.println(findNthElementFromEnd(list.head, 2));
+        System.out.println(findNthElementFromStart(list.head, 2));
 
     }
 }
