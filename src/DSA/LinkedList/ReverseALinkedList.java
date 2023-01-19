@@ -94,6 +94,15 @@ public class ReverseALinkedList {
         head.next=null;
         head=previous;
     }
+    Node reverseRecursion(Node head){
+        if(head==null|| head.next==null){
+            return head;
+        }
+        Node newHead=reverseRecursion(head.next);
+        head.next.next=head;// making the next node point to the current node
+        head.next=null;// breaking the connection where current node points towards
+        return newHead;
+    }
 
     public static void main(String[] args) {
         ReverseALinkedList list=new ReverseALinkedList();
@@ -102,7 +111,7 @@ public class ReverseALinkedList {
         list.addLast(3);
         list.addLast(4);
         list.printList();
-        list.reverseIteration();
+        list.head= list.reverseRecursion(list.head);
         list.printList();
 
     }
