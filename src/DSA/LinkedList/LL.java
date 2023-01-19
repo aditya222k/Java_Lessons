@@ -1,8 +1,7 @@
 
 package DSA.LinkedList;
 //https://www.youtube.com/watch?v=oAja8-Ulz6o
-//Head is the first node
- class LL {
+class LL {
     Node head;
 
     static class Node {
@@ -91,3 +90,5 @@ package DSA.LinkedList;
         list.printList();
     }
 }
+
+//Head is the first node
