@@ -32,7 +32,7 @@ public class PalindromeCheck {
         ReverseALinkedList.Node turtle= head;
         while(hare.next!= null && hare.next.next!=null){
             hare=hare.next.next;
-            turtle=turtle.next.next;
+            turtle=turtle.next;
         }
         return turtle;
     }
@@ -59,6 +59,9 @@ public class PalindromeCheck {
         ReverseALinkedList list=new ReverseALinkedList();
         list.addLast(1);
         list.addLast(2);
+        list.addLast(25);
+        list.addLast(3);
+        list.addLast(25);
         list.addLast(2);
         list.addLast(1);
         list.printList();
