@@ -10,7 +10,7 @@ public class rub {
                     count++;
                 }
             }
-        }//run
+        }
         System.out.println(count);
     }
 }
