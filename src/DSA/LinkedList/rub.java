@@ -11,6 +11,6 @@ public class rub {
                 }
             }
         }
-        System.out.println(count);
+        System.out.println(count);//todo clear
     }
 }
