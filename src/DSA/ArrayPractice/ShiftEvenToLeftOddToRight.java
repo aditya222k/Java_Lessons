@@ -17,7 +17,7 @@ public class ShiftEvenToLeftOddToRight {
         int i=0;
         int j = arr.length-1;
 
-        while(i<j){
+        while(i<=j){
             for(i=0; i<j; i++){
                 if(arr[i]%2!=0)
                     break;
@@ -26,8 +26,9 @@ public class ShiftEvenToLeftOddToRight {
                 if(arr[j]%2==0)
                     break;
             }
-
+            if (i < j) {
                 swap(arr, i, j);
+            }
         }
         System.out.println(Arrays.toString(arr));
     }
