@@ -28,6 +28,7 @@ public class ReverseAString {
 
     public static void main(String[] args){
         String str= stringInput();
-        System.out.println(withoutRecursion(str));
+//        System.out.println(withoutRecursion(str));
+        withRecursion(str);
     }
 }
